@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Mulish', sans-serif ; 
+}
+
+body {
+  background: #111;
+  height: 100vh;
+  box-sizing: border-box;
+
+}
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: #38393954;
+    font-weight: 400;
+    text-align: center;
+}
+
+.title a {
+    color: #494b4b90;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.title a:hover {
+    color: #494b4bf0;
+
+}
+
+.bottom-title {
+    color: #494b4b90;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+ 
+.slide {
+    height: 80vh;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+    flex: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+
+.slide img {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
+    margin: 0;
+    opacity: 0;
+    height: 70px;
+
+}
+
+.slide.active {
+    flex: 10;
+}
+
+.slide.active img {
+    opacity: 1;
+    transition: opacity 300ms ease-in 0.3s;
+}
